@@ -7,7 +7,7 @@ Thank you for your interest in contributing to goapauto! This document provides 
 1. **Fork the repository** on GitHub
 1. **Clone your fork** locally:
     ```bash
-    git clone https://github.com/IAmNo1Special/goapauto.git
+    git clone https://github.com/magitech-ai/goapauto.git
     cd goapauto
     ```
 1. **Install dependencies** with `uv`:
@@ -72,4 +72,4 @@ uv run pytest tests/
 
 ## Questions?
 
-Open an issue or reach out to [@IAmNo1Special](https://github.com/IAmNo1Special).
+Open an issue in the repository or reach out to [@magitech-ai](https://github.com/magitech-ai).

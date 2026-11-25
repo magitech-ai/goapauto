@@ -1,41 +1,33 @@
 name: CI
 
+permissions:
+  contents: read
+
 on:
   push:
-    branches: [main, "release/*"]
+    branches: [main]
   pull_request:
-    branches: [main, "release/*"]
+    branches: [main]
 
 jobs:
-  lint:
-    uses: IAmNo1Special/actions/.github/workflows/python-ci.yml@v1
+  test:
+    name: Test & Lint
+    uses: magitech-ai/.github/.github/workflows/python-ci.yml@main
     with:
       python-version: "3.12"
-      install-command: "uv sync --dev"
-      run-tests: false
       lint-commands: |
         uv run ruff check src/ tests/ .github/scripts/
         uv run ruff format --check src/ tests/ .github/scripts/
         uv run mypy src/
         uv run mdformat --check docs/ README.md CONTRIBUTING.md CHANGELOG.md RELEASE_NOTES.md AGENTS.md
-
-  test:
-    needs: lint
-    uses: IAmNo1Special/actions/.github/workflows/python-ci.yml@v1
-    with:
-      python-version: "3.12"
-      runs-on: windows-latest
-      install-command: "uv sync --all-extras --dev"
-      run-lint: false
       test-commands: "uv run pytest tests/ -v"
 
   tag:
     runs-on: ubuntu-latest
-    needs: [lint, test]
+    needs: [test]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     permissions:
       contents: write
-      actions: write
     steps:
       - uses: actions/checkout@v5
 

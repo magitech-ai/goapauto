@@ -2,9 +2,9 @@
 
 > **Goal-Oriented Action Planning for Python** — Build intelligent, autonomous agents with strict typing and comprehensive tooling.
 
-![CI](https://github.com/IAmNo1Special/goapauto/actions/workflows/ci.yml/badge.svg)
-![Release](https://img.shields.io/github/v/release/IAmNo1Special/goapauto)
-![License](https://img.shields.io/github/license/IAmNo1Special/goapauto)
+![CI](https://github.com/magitech-ai/goapauto/actions/workflows/ci.yml/badge.svg)
+![Release](https://img.shields.io/github/v/release/magitech-ai/goapauto)
+![License](https://img.shields.io/github/license/magitech-ai/goapauto)
 
 `goapauto` provides a modular framework for AI decision-making using A\* search. It separates **Perception** (Sensors), **Thinking** (Arbitration), **Planning** (A\*), and **Acting** (Actions), making it ideal for game AI, NPCs, and simulation bots.
 

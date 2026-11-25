@@ -1,8 +1,8 @@
 site_name: goapauto
 site_description: Strictly-typed Goal-Oriented Action Planning for Python.
-site_url: https://github.com/IAmNo1Special/goapauto
-repo_url: https://github.com/IAmNo1Special/goapauto
-repo_name: IAmNo1Special/goapauto
+site_url: https://github.com/magitech-ai/goapauto
+repo_url: https://github.com/magitech-ai/goapauto
+repo_name: magitech-ai/goapauto
 
 theme:
   name: material
