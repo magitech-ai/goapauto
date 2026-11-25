@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.2] - 2026-11-25
+
+### Fixed
+
+- **upgrade certifi and urllib3 to resolve security vulnerabilities**
+- **update LICENSE copyright holder to magitech-ai**
+- **satisfy mdformat on CHANGELOG and ruff 0.16.8 in examples**
+
+### Changed
+
+- **align goapauto with magitech-ai standards**
+- **bump ruff from 0.16.7 to 0.16.8**
+
 ## [0.6.1] - 2026-09-21
 
 ## [0.6.0] - 2026-09-21
