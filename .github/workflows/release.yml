@@ -33,7 +33,7 @@ jobs:
               run: |
                   git config user.name "github-actions[bot]"
                   git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                  git checkout main
+                  git checkout -f main
                   git add CHANGELOG.md RELEASE_NOTES.md
                   git commit -m "chore: update changelog and release notes for ${{ github.ref_name }}" || echo "No changes to commit"
                   git push
